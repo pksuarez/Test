@@ -1,0 +1,204 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Master Pizza</title>
+    <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="controladores.js" async></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <?php
+    session_start();
+    ?>
+</head>
+
+<body>
+
+<header>
+    <h3> <?php  echo $_SESSION['nombre']?></h3>
+    <h1>Master pizza</h1>
+</header>
+
+<div class="principal">
+    <div class="menu">
+        <ul class="nav nav-pills nav-stacked">
+            <li class="active"><a href="#">Ordenar</a></li>
+            <li><a href="#">Ver Historial</a></li>
+            <li><a href="login.html">Salir</a></li>
+            <li><a href="#">Menu 4</a></li>
+        </ul>
+    </div>
+
+
+    <div class="pizzas">
+        <div id='divPizzas'class="list-group">
+            <h2>Pizzas</h2>
+        </div>
+        <div id="divIngredientes">
+            <h2>Ingredientes</h2>
+        </div>
+    </div>
+
+    <div class="facturas">
+        <div id="divDesgloce">
+            <table  id ='tablaDesgloce' class="table table-striped">
+                <thead>
+                <tr>
+                    <th>Pizza</th>
+                    <th>Cantidad</th>
+                </tr>
+                </thead>
+                <tbody id="cuerpoTabla"
+                </tbody>
+            </table>
+        </div>
+        <div id="divTotal">
+            <p>Tota: </p>
+        </div>
+    </div>
+
+</div>
+
+<div id="pruebas"></div>
+
+
+</body>
+
+
+</html>
+<!--<table class="table table-hover table-responsive">
+    <thead>
+    <tr>
+        <th id="th">Pizzas</th>
+    </tr>
+    </thead>
+    <tbody id="lista">
+    <tr>
+        <td>Pizza 1</td>
+    </tr>
+    <tr>
+        <td>Pizza 2</td>
+    </tr>
+    </tbody>
+</table>-->
+
+
+html,body{
+height: 100%;
+width: 100%;
+}
+
+*{
+box-sizing: border-box;
+margin: 0px;
+
+}
+
+a{
+color: white;
+text-decoration: none;
+}
+a:visited{
+color: white;
+}
+header{
+text-align: center;
+background-color: lightcoral;
+height: 10%;
+}
+
+header h1{
+padding: 10px;
+}
+
+.principal{
+height: 90%;
+background-color: white;
+}
+
+.login{
+height: 100%;
+width: 50%;
+background-color: darkslategray;
+margin:0%25%;
+}
+
+.registro{
+height: 100%;
+width: 50%;
+background-color: darkslategray;
+margin:0%25%;
+}
+
+.menu{
+width: 20%;
+height: 100%;
+background-color: gray;
+float: left;
+}
+
+.pizzas,.facturas{
+width: 40%;
+height:100%;
+float: left;
+overflow: auto;
+
+}
+
+.ingredientes{
+width: 50%;
+height:100%;
+float: left;
+overflow: auto;
+
+}
+div h2{
+text-align: center;
+}
+
+
+#divPizzas, #divIngredientes{
+margin: 0px;
+height: 50%;
+width: 100%;
+border-style: dashed;
+}
+
+#divDesgloce{
+height: 80%;
+width: 100%;
+border-style: dashed;
+overflow: auto;
+}
+
+#divTotal{
+height: 20%;
+width: 100%;
+border-style: dashed;
+}
+#tablaDesgloce{
+overflow: auto;
+}
+
+.list-group-item{
+cursor: pointer;
+}
+
+header h3{
+text-align: center;
+margin: 0px;
+display: block;
+float: left;
+width: 20%;
+height: 100%;
+background-color: #335787;
+}
+header h1{
+margin: 0px;
+display: block;
+float: left;
+width: 80%;
+}
+
+

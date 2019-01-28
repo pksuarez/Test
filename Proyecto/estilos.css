@@ -1,0 +1,151 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0px;
+
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+a:visited{
+    color: white;
+}
+header{
+    text-align: center;
+    background-color: lightcoral;
+    height: 10%;
+}
+
+header h1{
+    padding: 10px;
+}
+
+.principal{
+    height: 90%;
+    background-color: white;
+}
+
+.login{
+    height: 100%;
+    width: 50%;
+    background-color: darkslategray;
+    margin:0%25%;
+}
+
+.registro{
+    height: 100%;
+    width: 50%;
+    background-color: darkslategray;
+    margin:0%25%;
+}
+
+.menu{
+    width: 20%;
+    height: 100%;
+    background-color: gray;
+    float: left;
+}
+div h2{
+    text-align: center;
+}
+
+
+#divPizzas, #divIngredientes{
+    margin: 0px;
+    height: 50%;
+    width: 40%;
+    float: left;
+    border-style: solid;
+    overflow: auto;
+}
+ul{
+    overflow: auto;
+}
+
+#divDesgloce{
+    height: 50%;
+    width: 50%;
+    border-style: solid;
+    overflow: auto;
+    float: left;
+ }
+
+#divTotal{
+    height: 50%;
+    width: 30%;
+    border-style: solid;
+    float: right;
+}
+#tablaDesgloce{
+    overflow: auto;
+}
+
+#nombresPizzas .list-group-item{
+    cursor: pointer;
+}
+#preciosPizzas .list-group-item{
+    cursor: default;
+}
+
+#listaOrdenes li{
+    cursor: pointer;
+}
+
+header h3{
+    text-align: center;
+    margin: 0px;
+    display: block;
+    float: left;
+    width: 20%;
+    height: 100%;
+    background-color: #335787;
+}
+header h1{
+    margin: 0px;
+    display: block;
+    float: left;
+    width: 80%;
+}
+
+.btn{
+    width: 100%;
+}
+
+.centrar{
+    text-align: center;
+}
+
+
+#nombresPizzas,#preciosPizzas{
+    display: block;
+    width: 50%;
+    float: left;
+}
+
+.textoGrande{
+    font-size: 4vw;
+    display: inline;
+}
+
+#divOrdenes{
+    border-style: solid;
+    float: left;
+    width: 20%;
+    height: 100%;
+    overflow: auto;
+}
+
+#divDetalles{
+    border-style: solid;
+    float: left;
+    width: 60%;
+    height: 100%;
+    overflow: auto;
+}
+

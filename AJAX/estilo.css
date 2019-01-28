@@ -1,0 +1,17 @@
+#h1{
+    margin-top: 0px;
+}
+
+#divVacia{
+    background-color: aqua;
+
+}
+
+#divPrincipal{
+    background-color:cadetblue;
+}
+
+body{
+    background-color: bisque;
+    margin: 0px;
+}

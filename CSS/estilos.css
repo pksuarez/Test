@@ -1,0 +1,20 @@
+#divTitulos{
+	border-style: dotted;
+	background-color: skyblue;
+    text-align: center;
+}
+
+#divControles{
+	font-style: italic;
+	background-color: darkgray;
+}
+
+#divRespuestas{
+	background-color: darkolivegreen;
+    text-align: center;
+    font-size: 50px;
+}
+
+body{
+    background-color: beige;
+}
